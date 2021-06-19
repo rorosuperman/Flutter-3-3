@@ -16,8 +16,8 @@ class _State extends State<MyApp> {
   int _value1 = 0;
   int _value2 = 0;
 
-  void _setValue1(int value) => setState(() => _value1 = value);
-  void _setValue2(int value) => setState(() => _value2 = value);
+  void _setValue1(int? value) => setState(() => _value1 = value!);
+  void _setValue2(int? value) => setState(() => _value2 = value!);
 
   Widget makeRadios() {
     List<Widget> list = new List<Widget>();
